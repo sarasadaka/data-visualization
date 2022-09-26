@@ -11,7 +11,7 @@ st.set_option('deprecation.showPyplotGlobalUse', False)
 
 
 # Read data
-data = pd.read_csv("/Users/sarasadaka/Desktop/MSBA325/Assignment 2/cardio_train.csv")
+data = pd.read_csv("cardio_train.csv")
 
 Menu = option_menu(None, ["Pie Chart","Histogram","Boxplot"],icons=["pie","bar-chart-line","sliders"],menu_icon="cast", default_index=0, orientation="horizontal", styles={"container": {"padding": "0!important", "background-color": "#fafafa"},"icon": {"color": "black", "font-size": "25px"}, "nav-link": {"font-size": "15px", "text-align": "left", "margin":"0px", "--hover-color": "#eee"},"nav-link-selected": {"background-color": "pink"},})
 if Menu == "Pie Chart": st.title('Gender Distribution in Dataset')
